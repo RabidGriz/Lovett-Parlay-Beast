@@ -1,0 +1,11 @@
+<svg width="420" height="120" viewBox="0 0 420 120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="420" height="120" fill="#101010"/>
+  <g font-family="Arial Black" font-weight="900">
+    <text x="24" y="72" font-size="28" fill="#e6c773">LOVETT</text>
+    <text x="24" y="102" font-size="20" fill="#7fffb0">PARLAY TRACKER</text>
+  </g>
+  <g>
+    <circle cx="360" cy="60" r="34" fill="none" stroke="#e6c773" stroke-width="3"/>
+    <path d="M330 72 L342 56 L356 66 L372 44 L386 52" fill="none" stroke="#7fffb0" stroke-width="3"/>
+  </g>
+</svg>
