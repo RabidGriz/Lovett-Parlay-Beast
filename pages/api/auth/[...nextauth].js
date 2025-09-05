@@ -1,11 +1,14 @@
 import NextAuth from "next-auth";
 import Credentials from "next-auth/providers/credentials";
 
-export default NextAuth({
+export const authOptions = {
   providers: [
     Credentials({
       name: "Demo",
-      credentials: { email: { label:"Email", type:"text" }, password: { label:"Password", type:"password" } },
+      credentials: {
+        email: { label: "Email", type: "text" },
+        password: { label: "Password", type: "password" }
+      },
       async authorize(credentials) {
         const users = [
           { id: "u1", email: process.env.DEMO_USER || "demo@lovett.ai", pass: process.env.DEMO_PASS || "demo123" },
@@ -17,12 +20,8 @@ export default NextAuth({
     })
   ],
   secret: process.env.NEXTAUTH_SECRET,
-  pages: { signIn: "/api/auth/signin" },
-  callbacks: {
-    async redirect({ url, baseUrl }) {
-      // After login or signout, go to /dashboard by default
-      if (url.startsWith("/")) return `${baseUrl}/dashboard`;
-      return url;
-    }
-  }
-});
+  // pages: { signIn: "/api/auth/signin" } // optional; default is fine
+  // remove custom redirect callback to avoid loops
+};
+
+export default NextAuth(authOptions);
