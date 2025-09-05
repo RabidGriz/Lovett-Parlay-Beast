@@ -1,0 +1,42 @@
+{
+  "parlays": [
+    {
+      "id": "p1",
+      "game": "Cowboys vs Eagles",
+      "date": "2025-09-05",
+      "legs": [
+        { "selection": "CeeDee Lamb over 122.5 rec yds", "result": "win" },
+        { "selection": "Jalen Hurts over 39.5 rush yds", "result": "win" },
+        { "selection": "Javonte Williams over 2.5 TDs", "result": "lose", "notes": "missed by 1" },
+        { "selection": "Over 58.5 total", "result": "lose" }
+      ],
+      "overall": "lose",
+      "notes": "Multiple drops and stalled drives."
+    },
+    {
+      "id": "p2",
+      "game": "Cowboys vs Eagles",
+      "date": "2025-09-05",
+      "legs": [
+        { "selection": "AJ Brown over 49.5 rec yds", "result": "lose", "notes": "0 receptions" },
+        { "selection": "AJ Brown TD", "result": "lose" },
+        { "selection": "Over 60.5 points", "result": "lose" }
+      ],
+      "overall": "lose",
+      "notes": "Total stayed under; Brown blanked."
+    },
+    {
+      "id": "p3",
+      "game": "Cowboys vs Eagles",
+      "date": "2025-09-05",
+      "legs": [
+        { "selection": "Jalen Hurts over 0.5 pass TD", "result": "win" },
+        { "selection": "Devonta Smith TD", "result": "lose" },
+        { "selection": "Cowboys +4.5", "result": "win" },
+        { "selection": "Over 65 points", "result": "lose" }
+      ],
+      "overall": "lose",
+      "notes": "Final score 24–20 Eagles."
+    }
+  ]
+}
